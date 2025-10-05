@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NASA-themed RAG Chatbot Design System. All colors MUST be HSL. */
+
+@layer base {
+  :root {
+    /* NASA Color Palette */
+    --background: 0 0% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* NASA Blue Primary */
+    --primary: 220 85% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 93%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Space accent colors */
+    --accent: 208 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 95%;
+    --ring: 220 85% 31%;
+
+    --radius: 0.75rem;
+
+    /* NASA-specific colors */
+    --nasa-blue: 220 85% 31%;
+    --nasa-light-blue: 208 100% 60%;
+    --space-gray: 215 15% 25%;
+    --cosmic-gradient: linear-gradient(135deg, hsl(var(--nasa-blue)), hsl(var(--nasa-light-blue)));
+    --message-user: 220 85% 31%;
+    --message-ai: 215 20% 95%;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 25% 15%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 25% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 208 100% 60%;
+    --primary-foreground: 215 25% 15%;
+
+    --secondary: 215 15% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 15% 20%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 220 85% 31%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 15% 25%;
+    --input: 215 15% 20%;
+    --ring: 208 100% 60%;
+
+    /* Dark mode NASA colors */
+    --nasa-blue: 208 100% 60%;
+    --nasa-light-blue: 220 85% 31%;
+    --space-gray: 215 15% 65%;
+    --cosmic-gradient: linear-gradient(135deg, hsl(var(--nasa-light-blue)), hsl(var(--nasa-blue)));
+    --message-user: 208 100% 60%;
+    --message-ai: 215 15% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
