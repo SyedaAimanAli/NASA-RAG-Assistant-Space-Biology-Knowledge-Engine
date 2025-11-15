@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 NASA RAG Assistant is an AI-powered knowledge engine built to make NASA’s space biology research and data more accessible and interactive. The system combines **retrieval** (searching through NASA’s open science data) with **generation** (summarizing and explaining results) to let users ask questions and instantly get data-backed insights.
 
@@ -17,7 +17,7 @@ NASA RAG Assistant is an AI-powered knowledge engine built to make NASA’s spac
 
 ---
 
-## 🧰 Features
+## Features
 
 - Ask natural language questions (e.g. “How does microgravity affect human cells?”)  
 - AI generates a concise, context-aware answer  
